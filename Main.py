@@ -28,10 +28,10 @@ def partition(array, low, high):
 def quick_sort(data, low, high) -> List[int]:
     # Write code here
     if low < high:
-        pi = partition(array, low, high)
-        quick_sort(array, low, pi - 1)
-        quick_sort(array, pi + 1, high)
-        return array
+        pi = partition(data, low, high)
+        quick_sort(data, low, pi - 1)
+        quick_sort(data, pi + 1, high)
+        return data
 
 input_data = input()
 data = []
